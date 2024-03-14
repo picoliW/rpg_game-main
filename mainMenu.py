@@ -19,7 +19,7 @@ def initialize_game():
 def menu():
     print('-------------------Main Menu--------------------')
     player_choose = input('What you want to do? \n 1- Fight \n 2- Practice \n 3- Store \n 4- Show Hero Stats \n 5- Quests \n 6- Achievements \n 7- Show Enemies Stats \n 8- Options \n')
-   
+    ...
     match player_choose:
         case '1':
             fight()
