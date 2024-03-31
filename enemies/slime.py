@@ -1,4 +1,4 @@
-class Dragon:
+class Slime:
     def __init__(self, name, health, damage, armor):
         self.name = name
         self.health = health
@@ -19,5 +19,4 @@ class Dragon:
     def __str__(self):
         return f"{self.name} - Health: {self.health}, Damage: {self.damage}, Armor: {self.armor}"
 
-dragon_instance = Dragon("Dragon", 130, 20, 40)
-
+slime_instance = Slime("Slime", 50, 6, 9)

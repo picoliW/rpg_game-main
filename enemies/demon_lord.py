@@ -19,4 +19,4 @@ class Demon_lord:
     def __str__(self):
         return f"{self.name} - Health: {self.health}, Damage: {self.damage}, Armor: {self.armor}"
 
-demonlord_instance = Demon_lord("Demon Lord", 200, 80, 500)
+demonlord_instance = Demon_lord("Demon Lord", 500, 80, 500)

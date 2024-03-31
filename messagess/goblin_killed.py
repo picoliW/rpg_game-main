@@ -13,7 +13,6 @@ def goblin_killed():
         goblin_instance.health = 40
         goblin_instance.armor = 10
     if goblins_killed >= goblins_killed_goal and not goblin_achievement_completed:
-        print(f'Achievement completed! You received {goblins_killed_reward} gold')
+        print(f'Achievement completed! You received {goblins_killed_reward} gold and unlocked Nazarick city, go to the "Achievements" tab to claim.')
         player_instance.gold += goblins_killed_reward
         goblin_achievement_completed = True
-        print(goblin_achievement_completed)

@@ -7,9 +7,7 @@ from messagess.goblin_killed import goblin_killed
 from messagess.dragon_killed import dragon_killed
 from messagess.game_over import game_over
 
-
-def fight():
-
+def fight_nazarick():
     while True:
         print('-------------------Fight--------------------')
         print("Player:", player_instance)
@@ -37,7 +35,7 @@ def fight():
                 if magic_choice == '1':
                     if player_instance.mana < fireball.manacost:
                         print('You dont have enough mana')
-                        fight()
+                        fight_nazarick()
                     else:
                         magic_target = input('what target? (goblin/dragon)')
                         player_instance.mana -= fireball.manacost
@@ -56,7 +54,7 @@ def fight():
                 elif magic_choice == '2':
                     if player_instance.mana < thunderbolt.manacost:
                         print('You dont have enough mana')
-                        fight()
+                        fight_nazarick()
                     else:
                         player_instance.mana -= thunderbolt.manacost
                         magic_target = input('what target? (goblin/dragon)')
@@ -76,7 +74,7 @@ def fight():
                 elif magic_choice == '3':
                     if player_instance.mana < ice_spike.manacost:
                         print('You dont have enough mana')
-                        fight()
+                        fight_nazarick()
                     else:
                         player_instance.mana -= ice_spike.manacost
                         goblin_instance.receive_damage(ice_spike.damage)
@@ -89,7 +87,7 @@ def fight():
                               
                 else:
                     print("Invalid choice.")
-                    fight()
+                    fight_nazarick()
 
             case "3":
                  demonLord_fight()
