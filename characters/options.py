@@ -13,7 +13,7 @@ def options():
 
         case '2':
             cheat_code = input('Type the cheat code: \n')
-            if cheat_code.lower() == 'cuzinho123':
+            if cheat_code.lower() == 'secretCode':
                 print('Cheat code activated!\n')
                 health_increase_input = input('Type how much you want to increase your health: \n')
                 try:

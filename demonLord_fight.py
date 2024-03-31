@@ -12,7 +12,6 @@ def demonLord_fight():
             print("Player:", player_instance)
             print("Demon Lord:", demonlord_instance)
             
-
             action = input("Enter an action \n 1- Sword Attack \n 2- Magic attack \n 3- Run \n ")
             match action:
                 case "1":
